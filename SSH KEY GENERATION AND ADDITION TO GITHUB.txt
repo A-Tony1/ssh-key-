@@ -1,0 +1,54 @@
+CREATING AND ADDING SSH KEY TO YOUR GITHUB ACCOUNT
+==================================================
+SSH is used to access GitHub during pulling and pushing
+used for ssh authentication in GitHub
+Lets you interacts with GitHub without typing a username or token each time
+This is generated locally in your system
+
+INSTRUCTIONS
+ Open Git Bash and type ssh-Keygen and click enter
+
+
+NOTE
+ Prompt for the file name and location
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/youruser/.ssh/id_rsa):Just click enter if don't wish to change were you wish to save both private and pubic keys.
+Prompt for a passphrase (optional but recommended)
+Enter passphrase (empty for no passphrase):
+You can:
+Type a secure passphrase (adds another layer of protection).
+Press Enter for no passphrase (less secure but convenient for automation).
+Prompt to confirm the passphrase
+
+
+
+
+
+Output summary
+Your identification has been saved in /home/youruser/.ssh/id_rsa
+Your public key has been saved in /home/youruser/.ssh/id_rsa.pub
+
+The key fingerprint is: could be different depending on you OS
+SHA256:... youruser@hostname
+The key's randomart image is:
++---[RSA 3072]----+
+| ..              |
+| o o .           |
+|  o = .          |
+| .+ B = o        |
+|.o= B O S        |
+|*+.o = = .       |
+|=++..   .        |
+|*oo.E .          |
+|B+=+oo.          |
++----[SHA256]-----+
+
+ Login to you GitHub account 
+
+Click on your profile icon and scroll to setting on the right side of your screen
+On the left side of you screen scroll down to SSH and GPG Keys: you don't need the GPG key
+Click and open, give name for the key, click on "NEW SSH KEY" copy the Public Key from local user folder and paste it in.
+Click on create ssh key
+Automatically when you pull or push it will be authenticated 
+
+Hope this was helpful? If needed I will also guide in creating the "PERSONAL ACCESS TOKEN" for using Git over HTTPS. Thanks all..
